@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Idle Universe Miner</title>
-    <html>
-<head>
-  <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
-  <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
-  <script type='text/javascript' src='path/to/planetaryjs.min.js'></script>
+    <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+    <script type='text/javascript' src='http://d3js.org/topojson.v1.min.js'></script>
+    <script type='text/javascript' src='path/to/planetaryjs.min.js'></script>
 </head>
 <body>
-    <div id="planetContainer"></div> <!-- Use a container for the generated planets -->
+    <div id="planetContainer">
+        <canvas id='rotatingGlobe' width='400' height='400' style='width: 400px; height: 400px; cursor: move;'></canvas>
+    </div>
     <div id="resources">Resources: <span id="resourceCount">0</span></div>
     <div id="coins">Coins: <span id="coinCount">0</span></div>
     <div id="miners">Miners: <span id="minerCount">0</span></div>
